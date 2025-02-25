@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Fixed Postion
+        </title>
+        <style>
+              .main-1{
+                display: flex;
+                flex-direction: column;
+            }
+            .position-0{
+                position:fixed;
+            }
+            .heading-1{
+                background-color: rgb(206, 162, 108);
+                height: fit-content;
+                width: fit-content;
+                font-size: 35px;
+               margin-left: 400px;
+                border-radius: 10px;
+                border: 1px solid rgb(65, 38, 6);
+
+            }
+            .main-body{
+                height: 500px;
+                width: 500px;
+                background-color: rgb(39, 4, 72);
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                text-align: center;
+                margin: 0 auto;
+                margin-top: 50px;
+                
+            }
+            .fixed{
+                height: 100px;
+                width: 100px;
+                padding: 20px;
+                margin: 50px;        
+                font-size: 80px;
+            }
+            .one{
+                position: fixed;
+                top:20px;
+                left:20px;
+               
+            }
+            .two{
+                position: fixed;
+                bottom: 20px;
+                right: 20px;
+            }
+            #bg-color-1{
+                background-color: rgb(141, 159, 21);
+            }
+            #bg-color-2{
+                background-color: rgb(30, 170, 23);
+            } #bg-color-3{
+                background-color: rgb(21, 159, 81);
+            } #bg-color-4{
+                background-color: rgb(21, 159, 148);
+            }
+
+
+
+        </style>
+    </head>
+    <body >
+
+        <div class="heading-1 position-0">
+            Fixed is set with respect to visible area of the browser.
+        </div>
+
+        <div class="main-1">
+       
+        <div  class="main-body">
+
+        <div class="fixed one" id="bg-color-1">
+1
+        </div>
+        <div class="fixed two" id="bg-color-2">
+2
+
+        </div>
+        <div class="fixed " id="bg-color-3">
+3
+        </div>
+        <div class="fixed " id="bg-color-4">
+4
+        </div>
+    </div>
+    <div  class="main-body">
+
+        <div class="fixed" id="bg-color-1">
+1
+        </div>
+        <div class="fixed " id="bg-color-2">
+2
+        </div>
+        <div class="fixed " id="bg-color-3">
+3
+        </div>
+        <div class="fixed " id="bg-color-4">
+4
+        </div>
+    </div>
+</div>
+<div>
+    <a href="frontpage.html">
+        Back to Homepage
+    </a>
+</div>
+    </body>
+</html>

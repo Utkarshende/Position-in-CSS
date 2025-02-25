@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Sticky Postion
+        </title>
+        <style>
+             .heading-1{
+                background-color: rgb(206, 162, 108);
+                height: fit-content;
+                width: fit-content;
+                font-size: 40px;
+           margin-left:165px ;
+                border-radius: 10px;
+                border: 1px solid rgb(65, 38, 6);
+
+            }
+            .main-body{
+                height: 1000px;
+                width: 700px;
+                background-color: rgb(39, 4, 72);
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+                text-align: center;
+                margin: 0 auto;
+                margin-top: 10px;                              
+            }
+            .sticky{
+                height: 200px;
+                width: 200px;
+                padding: 20px;
+                margin: 20px 0;        
+                font-size: 100px;
+            }
+            .sticky-1{
+                position: sticky;
+                top: 100px;
+                border-radius: 50px;
+                border: 2px solid rgb(192, 40, 9);
+                box-shadow: 0 0 5px 5px #fff;
+            }
+            
+            #bg-color-1{
+                background-color: rgb(141, 159, 21);
+               
+            }
+            #bg-color-2{
+                background-color: rgb(30, 170, 23);
+            } #bg-color-3{
+                background-color: rgb(21, 159, 81);
+            } #bg-color-4{
+                background-color: rgb(21, 159, 148);
+            }
+        </style>
+    </head>
+    <body >
+<div class="heading-1"> 
+Sticky elements are relative and fixed, its depending on the scroll position.
+
+</div>
+       
+        <div  class="main-body">
+        <div class="sticky " id="bg-color-1" >
+ A
+         </div>
+       
+        <div class="sticky sticky-1" id="bg-color-2">
+2
+        </div>
+        <div class="sticky " id="bg-color-3">
+3
+        </div>
+        <div class="sticky" id="bg-color-4">
+4
+        </div>
+    
+   
+    </div>
+    </div>
+    <div>
+        <a href="frontpage.html">
+            Back to Homepage
+        </a>
+    </div>
+    </body>
+</html>
